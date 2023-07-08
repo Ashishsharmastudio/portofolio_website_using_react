@@ -1,13 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 function App() {
-  function apple() 
-  { 
-    alert("function called");
+  let data="ashish sharma"
+  function apple()
+  {
+    data="raja"
+    alert(data);
   }
   return (
     <div className="App">
-      <h1>Hello WORLD!</h1>
+      <h1>{data}</h1>
       <button onClick={()=>apple()}>click me</button>
     </div>
   );
