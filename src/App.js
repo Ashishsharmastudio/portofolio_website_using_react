@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-
 function App() {
   function apple() { 
     alert('function called');
@@ -8,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <h1>Hello WORLD!</h1>
-      <button onClick={apple}>click me</button>
+      <button onClick={alert()}>click me</button>
       
     </div>
   );
