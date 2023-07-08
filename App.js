@@ -1,16 +1,21 @@
+import {useState} from 'react'
 import logo from './logo.svg';
 import './App.css';
+
 function App() {
-  function apple()
+  const [data,setData]=useState("ashish")
+  function updateData() 
   {
-    alert("funcion called");
+    setData("sharma")
   }
+  console.warn("___________")
   return (
     <div className="App">
-      <h1>Hello World!</h1>
-        <button onClick={() =>apple()}>click me</button>
+      <h1>{data}</h1>
+      {/* <button> update Data</button> */}
+      <button onClick={updateData}>update Data</button>
     </div>
-  );  
+  );
 }
 
 export default App;
