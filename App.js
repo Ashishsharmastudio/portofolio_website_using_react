@@ -3,10 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const [data,setData]=useState("ashish")
+  const [data,setData]=useState(0)
   function updateData() 
   {
-    setData("sharma")
+    setData(data+1)
   }
   console.warn("___________")
   return (
